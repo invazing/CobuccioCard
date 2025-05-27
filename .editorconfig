@@ -1,0 +1,71 @@
+﻿[*.vb]
+
+# BC40000: O tipo ou membro é obsoleto
+dotnet_diagnostic.BC40000.severity = none
+
+[*.{cs,vb}]
+#### Estilos de nomenclatura ####
+
+# Regras de nomenclatura
+
+dotnet_naming_rule.interface_should_be_começa_com_i.severity = suggestion
+dotnet_naming_rule.interface_should_be_começa_com_i.symbols = interface
+dotnet_naming_rule.interface_should_be_começa_com_i.style = começa_com_i
+
+dotnet_naming_rule.tipos_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.tipos_should_be_pascal_case.symbols = tipos
+dotnet_naming_rule.tipos_should_be_pascal_case.style = pascal_case
+
+dotnet_naming_rule.membros_sem_campo_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.membros_sem_campo_should_be_pascal_case.symbols = membros_sem_campo
+dotnet_naming_rule.membros_sem_campo_should_be_pascal_case.style = pascal_case
+
+# Especificações de símbolo
+
+dotnet_naming_symbols.interface.applicable_kinds = interface
+dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.interface.required_modifiers = 
+
+dotnet_naming_symbols.tipos.applicable_kinds = class, struct, interface, enum
+dotnet_naming_symbols.tipos.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.tipos.required_modifiers = 
+
+dotnet_naming_symbols.membros_sem_campo.applicable_kinds = property, event, method
+dotnet_naming_symbols.membros_sem_campo.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.membros_sem_campo.required_modifiers = 
+
+# Estilos de nomenclatura
+
+dotnet_naming_style.começa_com_i.required_prefix = I
+dotnet_naming_style.começa_com_i.required_suffix = 
+dotnet_naming_style.começa_com_i.word_separator = 
+dotnet_naming_style.começa_com_i.capitalization = pascal_case
+
+dotnet_naming_style.pascal_case.required_prefix = 
+dotnet_naming_style.pascal_case.required_suffix = 
+dotnet_naming_style.pascal_case.word_separator = 
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+
+dotnet_naming_style.pascal_case.required_prefix = 
+dotnet_naming_style.pascal_case.required_suffix = 
+dotnet_naming_style.pascal_case.word_separator = 
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+dotnet_style_qualification_for_field = false:silent
+dotnet_style_qualification_for_property = false:silent
+dotnet_style_qualification_for_method = false:silent
+dotnet_style_qualification_for_event = false:silent
+dotnet_style_readonly_field = true:suggestion
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:silent
+dotnet_style_allow_multiple_blank_lines_experimental = true:silent
+dotnet_style_allow_statement_immediately_after_block_experimental = true:silent
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
+dotnet_style_prefer_auto_properties = true:silent
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+end_of_line = crlf
+dotnet_style_operator_placement_when_wrapping = beginning_of_line
+tab_width = 4
+indent_size = 4
+dotnet_style_prefer_simplified_boolean_expressions = true:suggestion
