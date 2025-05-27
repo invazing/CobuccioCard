@@ -10,6 +10,7 @@ Projetado com foco em **eficiência, confiabilidade** e **escalabilidade** no pr
 Faça o download da versão funcional de demonstração do sistema:
 
 👉 Clique aqui para baixar o executável
+
 https://adrianocobuccio.vegsolutions.com.br/
 
 📦 O pacote inclui:
