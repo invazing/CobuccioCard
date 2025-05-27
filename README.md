@@ -17,6 +17,8 @@ Este sistema foi desenvolvido para garantir **organização, desempenho sólido*
 
 ### ✅ CRUD de Transações
 - Criar, consultar, editar (exceto transações aprovadas) e excluir transações.
+- Filtros inteligentes por número do cartão, data, valor e status.
+- Exibição em `DataGrid` com paginação otimizada.
 - Validação de campos:
   - `Id_Transacao`: gerado automaticamente
   - `Numero_Cartao`: 16 dígitos
@@ -24,8 +26,6 @@ Este sistema foi desenvolvido para garantir **organização, desempenho sólido*
   - `Data_Transacao`: data e hora
   - `Descricao`: até 255 caracteres
   - `Status_Transacao`: Aprovada, Pendente ou Cancelada
-- Filtros inteligentes por número do cartão, data, valor e status.
-- Exibição em `DataGrid` com paginação otimizada.
 
 ### 🛡️ Tratamento de Erros e Logs
 - Mensagens claras e amigáveis para o usuário final.
