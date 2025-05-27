@@ -70,7 +70,7 @@ Execute o script `SQL/ScriptSQL.sql` para criar:
 
 ### 3. Ajustar a string de conexão
 
-No arquivo `App.config`, configure a string de conexão para seu ambiente SQL Server.
+Na classe Connection altere a String de conexão ConnectionString `"Server=45.229.176.141;Database=CobuccioCard;User Id=cobuccio;Password=;"`, configure a string de conexão para seu ambiente SQL Server.
 
 ### 4. Rodar o projeto
 
@@ -79,10 +79,10 @@ Abra a solução no Visual Studio 2022, compile e pressione F5 para executar.
 ---
 
 📁 **Estrutura do Projeto**
-- `/Forms`        → Telas (CRUD, login, consultas)
+- `/Data`         → Camada de acesso a dados e conexão com SQL Server
+- `/Forms`        → Interfaces e lógicas dos formulários (login, CRUD, consultas)
 - `/Shared`       → Utilitários e helpers (ex: log de erros)
-- `/SQL`          → Scripts SQL do sistema
-- `/Relatorios`   → Exemplos de relatórios gerados
+- `/Reports`      → Modelo / Relatórios gerados
 
 ---
 
