@@ -1,73 +1,94 @@
-# XYZ Administradora de Cartões de Crédito
+===============================================
+XYZ Administradora de Cartões de Crédito
+===============================================
 
-Sistema para cadastro e gerenciamento de transações de cartão de crédito, desenvolvido em VB.NET com SQL Server.
+Sistema completo para cadastro e gerenciamento de transações de cartão de crédito, 
+desenvolvido em VB.NET com SQL Server. Projetado para oferecer robustez, desempenho 
+e segurança no processamento de grandes volumes de dados financeiros.
 
-## Contexto
+-----------------------------------------------
+Contexto
+-----------------------------------------------
 
-A XYZ Administradora de Cartões de Crédito busca uma solução robusta para gerenciar transações financeiras de clientes, garantindo eficiência, escalabilidade e confiabilidade no processamento de grandes volumes de dados.
+A XYZ Administradora de Cartões de Crédito precisava de uma solução escalável e 
+confiável para o gerenciamento de transações financeiras de seus clientes. Este 
+sistema foi desenvolvido para atender a essa demanda com eficiência, organização 
+e facilidade de uso.
 
-## Funcionalidades
+-----------------------------------------------
+Funcionalidades
+-----------------------------------------------
 
-- **CRUD de Transações**  
-  - Cadastro, edição (exceto transações aprovadas), exclusão (com confirmação) e consulta de transações.
-  - Campos obrigatórios:  
-    - Id_Transacao (automático)  
-    - Numero_Cartao (16 dígitos)  
-    - Valor_Transacao (decimal positivo)  
-    - Data_Transacao (data/hora)  
-    - Descricao (até 255 caracteres)  
+[1] Gerenciamento de Transações (CRUD)
+- Cadastro, edição (exceto transações aprovadas), exclusão com confirmação e consulta.
+- Validações aplicadas aos campos:
+    - Id_Transacao (gerado automaticamente)
+    - Numero_Cartao (16 dígitos)
+    - Valor_Transacao (decimal positivo)
+    - Data_Transacao (data/hora)
+    - Descricao (máx. 255 caracteres)
     - Status_Transacao (Aprovada, Pendente, Cancelada)
-  - Filtros de consulta: Número do cartão, data, valor, status.
-  - Exibição em DataGrid com paginação eficiente.
+- Filtros por: número do cartão, data, valor e status.
+- Resultados exibidos em DataGrid com paginação otimizada.
 
-- **Tratamento de Erros e Logs**  
-  - Mensagens amigáveis ao usuário.
-  - Registro detalhado de erros em arquivo de log.
+[2] Tratamento de Erros e Logs
+- Mensagens de erro amigáveis ao usuário.
+- Log detalhado salvo em arquivos locais para diagnóstico.
 
-- **SQL Server**  
-  - Stored Procedure para totalização de transações por período e status.
-  - Scalar Function para categorização de valores.
-  - Table-Valued Function (TVF) para listar transações categorizadas.
-  - View consolidada para consultas financeiras.
+[3] Integração com SQL Server
+- Stored Procedure: totalização de transações por período e status.
+- Scalar Function: categorização automática de valores.
+- Table-Valued Function (TVF): listagem de transações categorizadas.
+- View consolidada para relatórios financeiros.
 
-- **Exportação para Excel**  
-  - Exporta transações do último mês para arquivo Excel.
+[4] Exportação para Excel
+- Exporta automaticamente as transações do último mês para arquivo .xlsx.
 
-## Requisitos
+-----------------------------------------------
+Requisitos
+-----------------------------------------------
 
 - Visual Studio 2022
 - .NET Framework 4.7.2 ou superior
 - SQL Server 2016 ou superior
 
-## Instalação e Execução
+-----------------------------------------------
+Instalação e Execução
+-----------------------------------------------
 
-1. **Clone o repositório:**
+1. Clone o repositório:
+   git clone https://github.com/seu-usuario/seu-repositorio.git
 
-git clone https://github.com/seu-usuario/seu-repositorio.git
+2. Configure o banco de dados:
+   Execute o script SQL/ScriptSQL.sql para criar as tabelas, procedures, functions, 
+   views e dados de exemplo.
 
+3. Ajuste a string de conexão:
+   No arquivo App.config, configure a string de conexão com seu SQL Server.
 
-2. **Configure o banco de dados:**
-   - Execute o script `ScriptSQL.sql` para criar tabelas, procedures, functions, views e inserir dados de exemplo.
+4. Abra o projeto no Visual Studio 2022 e execute.
 
-3. **Ajuste a string de conexão:**
-   - No arquivo de configuração da aplicação (`App.config` ou equivalente), ajuste a string de conexão para o seu SQL Server.
+-----------------------------------------------
+Estrutura do Projeto
+-----------------------------------------------
 
-4. **Abra o projeto no Visual Studio 2022 e execute.**
+/Forms       -> Telas da aplicação (CRUD, login, consultas)
+/Shared      -> Utilitários e classes auxiliares (ex: log de erros)
+/SQL         -> Scripts SQL (procedures, functions, views)
+/Relatorios  -> Exemplo de relatório gerado em Excel
 
-## Estrutura do Projeto
+-----------------------------------------------
+Exemplo de Uso
+-----------------------------------------------
 
-- `/Forms` - Telas da aplicação (CRUD, login, consulta, etc)
-- `/Shared` - Utilitários e helpers (ex: log de erros)
-- `/SQL` - Scripts SQL (tabelas, procedures, functions, views)
-- `/Relatorios` - Exemplo de relatório Excel gerado
+- Cadastre, edite e exclua transações conforme regras de negócio.
+- Filtre e consulte transações no sistema.
+- Gere relatórios via views e TVFs diretamente no SQL Server.
+- Exporte dados para Excel com facilidade.
 
-## Exemplo de Uso
+-----------------------------------------------
+Licença
+-----------------------------------------------
 
-1. Cadastre, edite e exclua transações conforme as regras de negócio.
-2. Consulte transações com filtros e exporte para Excel.
-3. Consulte relatórios financeiros via views e TVFs no SQL Server.
-
-## Licença
-
-Este projeto é apenas para fins de avaliação técnica.
-   
+Este projeto foi desenvolvido exclusivamente para fins de avaliação técnica.
+Distribuição ou uso comercial não é permitido.
