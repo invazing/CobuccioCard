@@ -55,7 +55,7 @@ Este sistema foi desenvolvido para garantir **organização, desempenho sólido*
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/invazing/CobuccioCard
 ```
 
 ### 2. Criar e configurar o banco de dados
