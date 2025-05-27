@@ -82,7 +82,7 @@ Execute o script `SQL/ScriptSQL.sql` para criar:
 
 ### 3. Ajustar a string de conexão
 
-Na classe Connection altere a String de conexão ConnectionString `"Server=45.229.176.141;Database=CobuccioCard;User Id=cobuccio;Password=;"`, configure a string de conexão para seu ambiente SQL Server.
+Na classe Connection altere a String de conexão ConnectionString `"Server=;Database=;User Id=;Password=;"`, configure a string de conexão para seu ambiente SQL Server.
 
 ### 4. Rodar o projeto
 
