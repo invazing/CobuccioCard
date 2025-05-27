@@ -12,6 +12,11 @@ Faça o download da versão funcional de demonstração do sistema:
 
 https://adrianocobuccio.vegsolutions.com.br/
 
+🔐 Credenciais de Acesso
+
+- Usuário: ADMIN  
+- Senha: ADMIN
+
 📦 O pacote inclui:
 
 - Arquivos .exe compilados
