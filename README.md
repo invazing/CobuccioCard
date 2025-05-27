@@ -1,4 +1,4 @@
-# 💳 XYZ Administradora de Cartões de Crédito
+# 💳 CobuccioCard - Grupo Adriano Cobuccio
 
 Sistema completo para **cadastro e gerenciamento de transações de cartão de crédito**, desenvolvido em **VB.NET** com **SQL Server**.  
 Focado em **eficiência, confiabilidade** e **escalabilidade** no processamento de dados financeiros.
@@ -7,7 +7,7 @@ Focado em **eficiência, confiabilidade** e **escalabilidade** no processamento 
 
 ## 📘 Visão Geral
 
-A XYZ Administradora precisava de uma solução robusta para o controle de transações financeiras dos clientes.  
+A Grupo Adriano Cobuccio precisava de uma solução robusta para o controle de transações financeiras dos clientes.  
 Este sistema foi desenvolvido para atender com segurança, organização e boa performance.
 
 ---
@@ -28,7 +28,7 @@ Este sistema foi desenvolvido para atender com segurança, organização e boa p
 
 ### 🛡️ Tratamento de Erros e Logs
 - Exibição de mensagens amigáveis ao usuário.
-- Log detalhado de exceções salvo em arquivos `.log`.
+- Log detalhado de exceções salvo em arquivos `.log` na pasta %programdata%/Cobucciocard/cobucciocard.log.
 
 ### 🗃️ SQL Server Avançado
 - `Stored Procedure`: totalização de transações por período e status.
@@ -37,14 +37,14 @@ Este sistema foi desenvolvido para atender com segurança, organização e boa p
 - `View`: consolidação de dados para relatórios.
 
 ### 📤 Exportação para Excel
-- Exportação de transações do último mês para arquivo `.xlsx`.
+- Exporta transações do período selecionado para arquivo Excel (.xlsx).
 
 ---
 
 ## 🧩 Requisitos
 
 - Visual Studio 2022  
-- .NET Framework 4.7.2 ou superior  
+- .NET Core 8.0 ou superior  
 - SQL Server 2016 ou superior
 
 ---
@@ -55,3 +55,46 @@ Este sistema foi desenvolvido para atender com segurança, organização e boa p
 
 ```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+
+### 2. Configure o banco de dados
+Execute o script SQL/ScriptSQL.sql para criar:
+
+- Tabelas
+- Stored Procedures
+- Functions
+- Views
+
+## Dados de exemplo
+
+### 3. Ajuste a string de conexão
+No arquivo App.config, configure a string de conexão com seu SQL Server.
+
+### 4. Execute o projeto
+Abra a solução no Visual Studio 2022.
+
+Compile e inicie a aplicação (F5).
+
+📁 Estrutura do Projeto
+plaintext
+Copy
+Edit
+- /Forms        → Telas (CRUD, login, consultas)
+- /Shared       → Utilitários e helpers (ex: log de erros)
+- /SQL          → Scripts SQL do sistema
+- /Relatorios   → Exemplos de relatórios gerados
+
+## 🧪 Exemplo de Uso
+Cadastre e consulte transações com filtros específicos.
+
+Exporte dados para Excel com um clique.
+
+Acesse relatórios financeiros via views e TVFs no SQL Server.
+
+📄 Licença
+Este projeto foi desenvolvido exclusivamente para avaliação técnica.
+Distribuição comercial ou uso externo não são permitidos.
+
+---
+
+Se quiser, posso te mandar isso já formatado como arquivo `README.md` ou `.txt`. É só avisar!
