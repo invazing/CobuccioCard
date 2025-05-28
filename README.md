@@ -72,7 +72,7 @@ git clone https://github.com/invazing/CobuccioCard
 
 ### 2. Criar e configurar o banco de dados
 
-Execute o script `SQL/ScriptSQL.sql` para criar:
+Restaure o banco de dados o script `Backup_Full_CobuccioCard.bak` para criar:
 
 - Tabelas
 - Stored Procedures
