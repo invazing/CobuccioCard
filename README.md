@@ -21,7 +21,6 @@ https://adrianocobuccio.vegsolutions.com.br/
 
 - Arquivos .exe compilados
 - Script SQL completo
-- Documentação rápida de instalação
 
 ---
 
