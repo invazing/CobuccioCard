@@ -24,8 +24,8 @@ Partial Class Form_Analise
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Analise))
         GroupBox4 = New GroupBox()
-        dgv_ResumoFinanceiro = New DataGridView()
-        dgv_AnaliseFinanceira = New DataGridView()
+        gridResumoFinanceira = New DataGridView()
+        gridAnaliseFinanceira = New DataGridView()
         Label1 = New Label()
         dtp_data_transacao_final = New DateTimePicker()
         lbl_data_transacao = New Label()
@@ -34,8 +34,8 @@ Partial Class Form_Analise
         GroupBox1 = New GroupBox()
         GroupBox2 = New GroupBox()
         GroupBox4.SuspendLayout()
-        CType(dgv_ResumoFinanceiro, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dgv_AnaliseFinanceira, ComponentModel.ISupportInitialize).BeginInit()
+        CType(gridResumoFinanceira, ComponentModel.ISupportInitialize).BeginInit()
+        CType(gridAnaliseFinanceira, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         SuspendLayout()
@@ -43,45 +43,49 @@ Partial Class Form_Analise
         ' GroupBox4
         ' 
         GroupBox4.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        GroupBox4.Controls.Add(dgv_ResumoFinanceiro)
-        GroupBox4.Location = New Point(12, 83)
+        GroupBox4.Controls.Add(gridResumoFinanceira)
+        GroupBox4.Location = New Point(12, 78)
         GroupBox4.Name = "GroupBox4"
-        GroupBox4.Size = New Size(866, 132)
+        GroupBox4.Size = New Size(866, 90)
         GroupBox4.TabIndex = 26
         GroupBox4.TabStop = False
         GroupBox4.Text = "Resumo Financeiro"
         ' 
-        ' dgv_ResumoFinanceiro
+        ' gridResumoFinanceira
         ' 
-        dgv_ResumoFinanceiro.AllowUserToAddRows = False
-        dgv_ResumoFinanceiro.AllowUserToDeleteRows = False
-        dgv_ResumoFinanceiro.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-        dgv_ResumoFinanceiro.BackgroundColor = SystemColors.ControlDarkDark
-        dgv_ResumoFinanceiro.BorderStyle = BorderStyle.Fixed3D
-        dgv_ResumoFinanceiro.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgv_ResumoFinanceiro.Dock = DockStyle.Fill
-        dgv_ResumoFinanceiro.Location = New Point(3, 19)
-        dgv_ResumoFinanceiro.Name = "dgv_ResumoFinanceiro"
-        dgv_ResumoFinanceiro.ReadOnly = True
-        dgv_ResumoFinanceiro.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dgv_ResumoFinanceiro.Size = New Size(860, 110)
-        dgv_ResumoFinanceiro.TabIndex = 18
+        gridResumoFinanceira.AllowUserToAddRows = False
+        gridResumoFinanceira.AllowUserToDeleteRows = False
+        gridResumoFinanceira.AllowUserToResizeColumns = False
+        gridResumoFinanceira.AllowUserToResizeRows = False
+        gridResumoFinanceira.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        gridResumoFinanceira.BackgroundColor = SystemColors.ControlDarkDark
+        gridResumoFinanceira.BorderStyle = BorderStyle.Fixed3D
+        gridResumoFinanceira.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        gridResumoFinanceira.Dock = DockStyle.Fill
+        gridResumoFinanceira.Location = New Point(3, 19)
+        gridResumoFinanceira.Name = "gridResumoFinanceira"
+        gridResumoFinanceira.ReadOnly = True
+        gridResumoFinanceira.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        gridResumoFinanceira.Size = New Size(860, 68)
+        gridResumoFinanceira.TabIndex = 18
         ' 
-        ' dgv_AnaliseFinanceira
+        ' gridAnaliseFinanceira
         ' 
-        dgv_AnaliseFinanceira.AllowUserToAddRows = False
-        dgv_AnaliseFinanceira.AllowUserToDeleteRows = False
-        dgv_AnaliseFinanceira.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-        dgv_AnaliseFinanceira.BackgroundColor = SystemColors.ControlDarkDark
-        dgv_AnaliseFinanceira.BorderStyle = BorderStyle.Fixed3D
-        dgv_AnaliseFinanceira.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgv_AnaliseFinanceira.Dock = DockStyle.Fill
-        dgv_AnaliseFinanceira.Location = New Point(3, 19)
-        dgv_AnaliseFinanceira.Name = "dgv_AnaliseFinanceira"
-        dgv_AnaliseFinanceira.ReadOnly = True
-        dgv_AnaliseFinanceira.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dgv_AnaliseFinanceira.Size = New Size(860, 196)
-        dgv_AnaliseFinanceira.TabIndex = 19
+        gridAnaliseFinanceira.AllowUserToAddRows = False
+        gridAnaliseFinanceira.AllowUserToDeleteRows = False
+        gridAnaliseFinanceira.AllowUserToResizeColumns = False
+        gridAnaliseFinanceira.AllowUserToResizeRows = False
+        gridAnaliseFinanceira.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        gridAnaliseFinanceira.BackgroundColor = SystemColors.ControlDarkDark
+        gridAnaliseFinanceira.BorderStyle = BorderStyle.Fixed3D
+        gridAnaliseFinanceira.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        gridAnaliseFinanceira.Dock = DockStyle.Fill
+        gridAnaliseFinanceira.Location = New Point(3, 19)
+        gridAnaliseFinanceira.Name = "gridAnaliseFinanceira"
+        gridAnaliseFinanceira.ReadOnly = True
+        gridAnaliseFinanceira.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        gridAnaliseFinanceira.Size = New Size(860, 255)
+        gridAnaliseFinanceira.TabIndex = 19
         ' 
         ' Label1
         ' 
@@ -145,17 +149,17 @@ Partial Class Form_Analise
         ' GroupBox2
         ' 
         GroupBox2.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        GroupBox2.Controls.Add(dgv_AnaliseFinanceira)
-        GroupBox2.Location = New Point(12, 221)
+        GroupBox2.Controls.Add(gridAnaliseFinanceira)
+        GroupBox2.Location = New Point(12, 171)
         GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(866, 218)
+        GroupBox2.Size = New Size(866, 277)
         GroupBox2.TabIndex = 28
         GroupBox2.TabStop = False
         GroupBox2.Text = "Analise Financeira"
         ' 
         ' Form_Analise
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(890, 451)
         Controls.Add(GroupBox2)
@@ -165,8 +169,8 @@ Partial Class Form_Analise
         Name = "Form_Analise"
         Text = "Análise de Transações"
         GroupBox4.ResumeLayout(False)
-        CType(dgv_ResumoFinanceiro, ComponentModel.ISupportInitialize).EndInit()
-        CType(dgv_AnaliseFinanceira, ComponentModel.ISupportInitialize).EndInit()
+        CType(gridResumoFinanceira, ComponentModel.ISupportInitialize).EndInit()
+        CType(gridAnaliseFinanceira, ComponentModel.ISupportInitialize).EndInit()
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
         GroupBox2.ResumeLayout(False)
@@ -179,7 +183,7 @@ Partial Class Form_Analise
     Friend WithEvents dtp_data_transacao_inicial As DateTimePicker
     Friend WithEvents lbl_data_transacao As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents dgv_AnaliseFinanceira As DataGridView
-    Friend WithEvents dgv_ResumoFinanceiro As DataGridView
+    Friend WithEvents gridAnaliseFinanceira As DataGridView
+    Friend WithEvents gridResumoFinanceira As DataGridView
     Friend WithEvents GroupBox2 As GroupBox
 End Class
