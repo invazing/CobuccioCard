@@ -70,7 +70,7 @@ https://adrianocobuccio.vegsolutions.com.br/
 git clone https://github.com/invazing/CobuccioCard
 ```
 
-### 2. Criar e configurar o banco de dados
+## 2. Criar e configurar o banco de dados
 
 Restaure o banco de dados o script `Backup_Full_CobuccioCard.bak` para criar:
 
@@ -80,11 +80,11 @@ Restaure o banco de dados o script `Backup_Full_CobuccioCard.bak` para criar:
 - Views
 - Dados de exemplo
 
-### 3. Ajustar a string de conexão
+## 3. Ajustar a string de conexão
 
 Na classe Connection altere a String de conexão ConnectionString `"Server=;Database=;User Id=;Password=;"`, configure a string de conexão para seu ambiente SQL Server.
 
-### 4. Rodar o projeto
+## 4. Rodar o projeto
 
 Abra a solução no Visual Studio 2022, compile e pressione F5 para executar.
 
@@ -105,8 +105,6 @@ Abra a solução no Visual Studio 2022, compile e pressione F5 para executar.
 - Pode gerar dados de input no banco de dados via `GERAR DADOS` no `MENU` do sistema.
 
 ![image](https://github.com/user-attachments/assets/e4deb6b6-97cb-4b68-a7e5-e2a274b59cfc)
-
-
 
 ---
 
