@@ -1,8 +1,8 @@
 ﻿Imports System.Data.SqlClient
 
-Module GeradorDeTransacoes
+Module modGerarRegistro
 
-    ' Lista de descrições possíveis para as transações, simulando categorias reais.
+
     Dim descricoes() As String = {
         "CINEMA", "UBER", "SORVETERIA", "RESTAURANTE", "GASOLINA", "LOJA ONLINE", "ACADEMIA", "SUPERMERCADO", "FARMÁCIA", "FAST FOOD",
         "PIZZARIA", "PEDÁGIO", "ESTACIONAMENTO", "LOJA DE ROUPAS", "BAR", "ASSINATURA STREAMING", "PARQUE", "CARTÃO TRANSPORTE",
@@ -10,23 +10,19 @@ Module GeradorDeTransacoes
         "ALUGUEL DE CARRO", "TAXI", "CAFETERIA", "CONVENIÊNCIA", "ELETRODOMÉSTICOS", "ELETRÔNICOS", "LOJA DE CALÇADOS", "SHOW", "TEATRO"
     }
 
-    ' Possíveis status que uma transação pode ter.
     Dim status() As String = {"Aprovada", "Pendente", "Cancelada"}
 
-    ' Gera uma quantidade (padrão 1000) de transações aleatórias e insere no banco.
-    ' Cada transação tem número de cartão, valor, data, descrição e status gerados aleatoriamente.
     Public Sub GerarTransacoes(Optional quantidade As Integer = 1000)
-        Using conn As New SqlConnection(Connection.ConnectionString)
+        Using conn As New SqlConnection(modConnection.ConnectionString)
             conn.Open()
             For i = 1 To quantidade
-                ' Gera dados aleatórios para a transação
+
                 Dim numeroCartao As String = GerarNumeroCartao()
                 Dim valor As Decimal = GerarValor()
                 Dim dataTransacao As DateTime = GerarData2025()
                 Dim descricao As String = descricoes(New Random().Next(descricoes.Length))
                 Dim statusTransacao As String = status(New Random().Next(status.Length))
 
-                ' Comando SQL para inserir a transação
                 Dim cmdText As String = "INSERT INTO Transacoes (Numero_Cartao, Valor_Transacao, Data_Transacao, Descricao, Status_Transacao) " &
                                         "VALUES (@NumeroCartao, @Valor, @Data, @Descricao, @Status)"
 
@@ -42,7 +38,6 @@ Module GeradorDeTransacoes
         End Using
     End Sub
 
-    ' Gera um número de cartão de crédito aleatório com 16 dígitos.
     Function GerarNumeroCartao() As String
         Dim rnd As New Random()
         Dim numero As String = ""
@@ -52,13 +47,11 @@ Module GeradorDeTransacoes
         Return numero
     End Function
 
-    ' Gera um valor decimal aleatório entre R$ 10,00 e R$ 5.000,00.
     Function GerarValor() As Decimal
         Dim rnd As New Random()
-        Return Math.Round(CDec(rnd.Next(1000, 500000)) / 100, 2) ' De 10,00 a 5000,00
+        Return Math.Round(CDec(rnd.Next(1000, 800000)) / 100, 2) ' De 10,00 a 5000,00
     End Function
 
-    ' Gera uma data aleatória dentro do ano de 2025, com hora, minuto e segundo.
     Function GerarData2025() As DateTime
         Dim rnd As New Random()
         Dim ano As Integer = 2025

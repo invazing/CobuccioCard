@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form_Cad_Transacoes
+Partial Class Form_CadTransacoes
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
@@ -22,7 +22,7 @@ Partial Class Form_Cad_Transacoes
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Cad_Transacoes))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_CadTransacoes))
         GroupBox1 = New GroupBox()
         lbl_cmb_status_transacao = New Label()
         cmb_status_transacao = New ComboBox()
@@ -34,7 +34,6 @@ Partial Class Form_Cad_Transacoes
         tbx_descricao = New TextBox()
         lbl_descricao = New Label()
         tbx_numero_cartao = New TextBox()
-        btn_novo = New Button()
         btn_salvar = New Button()
         btn_cancelar = New Button()
         GroupBox1.SuspendLayout()
@@ -148,15 +147,6 @@ Partial Class Form_Cad_Transacoes
         tbx_numero_cartao.Size = New Size(131, 23)
         tbx_numero_cartao.TabIndex = 1
         ' 
-        ' btn_novo
-        ' 
-        btn_novo.Location = New Point(13, 160)
-        btn_novo.Name = "btn_novo"
-        btn_novo.Size = New Size(75, 23)
-        btn_novo.TabIndex = 6
-        btn_novo.Text = "Novo"
-        btn_novo.UseVisualStyleBackColor = True
-        ' 
         ' btn_salvar
         ' 
         btn_salvar.ForeColor = Color.Blue
@@ -177,19 +167,18 @@ Partial Class Form_Cad_Transacoes
         btn_cancelar.Text = "&Cancelar"
         btn_cancelar.UseVisualStyleBackColor = True
         ' 
-        ' Form_Cad_Transacoes
+        ' Form_CadTransacoes
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(495, 193)
         Controls.Add(btn_cancelar)
         Controls.Add(btn_salvar)
-        Controls.Add(btn_novo)
         Controls.Add(GroupBox1)
         FormBorderStyle = FormBorderStyle.FixedDialog
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
-        Name = "Form_Cad_Transacoes"
+        Name = "Form_CadTransacoes"
         Text = "Cadastro de Transações"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
@@ -207,7 +196,6 @@ Partial Class Form_Cad_Transacoes
     Friend WithEvents dtp_data_transacao As DateTimePicker
     Friend WithEvents lbl_cmb_status_transacao As Label
     Friend WithEvents cmb_status_transacao As ComboBox
-    Friend WithEvents btn_novo As Button
     Friend WithEvents btn_salvar As Button
     Friend WithEvents btn_cancelar As Button
 End Class
