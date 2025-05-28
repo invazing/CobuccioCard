@@ -12,7 +12,7 @@ Faça o download da versão funcional de demonstração do sistema:
 
 https://adrianocobuccio.vegsolutions.com.br/
 
-🔐 Credenciais de Acesso
+⚠️❗Credenciais de Acesso ❗⚠️
 
 - Usuário: ADMIN  
 - Senha: ADMIN
