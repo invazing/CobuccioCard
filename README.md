@@ -90,7 +90,7 @@ Abra a solução no Visual Studio 2022, compile e pressione F5 para executar.
 
 ---
 
-📁 **Estrutura do Projeto**
+## 📁 **Estrutura do Projeto**
 - `/Data`         → Camada de acesso a dados e conexão com SQL Server
 - `/Forms`        → Interfaces e lógicas dos formulários (login, CRUD, consultas)
 - `/Shared`       → Utilitários e helpers (ex: log de erros)
@@ -110,7 +110,7 @@ Abra a solução no Visual Studio 2022, compile e pressione F5 para executar.
 
 ---
 
-📄 **Licença**
+## 📄 **Licença**
 
 Este projeto foi desenvolvido exclusivamente para fins de avaliação técnica.  
 Distribuição comercial ou uso externo não são permitidos.
