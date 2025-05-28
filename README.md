@@ -104,6 +104,9 @@ Abra a solução no Visual Studio 2022, compile e pressione F5 para executar.
 - Exportar dados para Excel com um clique.
 - Pode gerar dados de input no banco de dados via `GERAR DADOS` no Menu do sistema.
 
+![image](https://github.com/user-attachments/assets/5e871c6a-ea00-4630-b941-62124ab20635)
+
+
 ---
 
 📄 **Licença**
