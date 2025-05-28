@@ -13,10 +13,11 @@
     <Product>CobuccioCard</Product>
     <Company>Grupo Adriano Cobuccio</Company>
     <Authors>Cobuccio - Emmanoel Silva</Authors>
-    <Version>2025.5.26.1</Version>
+    <Version>2025.10.18.2</Version>
     <Description>Descrição :
 
 Este sistema foi desenvolvido como uma etapa do processo seletivo para o Grupo Adriano Cobuccio. O objetivo principal foi demonstrar habilidades técnicas, capacidade de resolução de problemas e entendimento dos requisitos solicitados pela empresa.</Description>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -54,13 +55,6 @@ Este sistema foi desenvolvido como uma etapa do processo seletivo para o Grupo A
     <None Update="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="D:\OneDrive\Área de Trabalho\icon_desktop.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 

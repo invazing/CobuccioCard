@@ -1,6 +1,6 @@
 ﻿Imports System.IO
 
-Public Class LogHelper
+Public Class modLogHelper
 
     ' Caminho onde o arquivo de log será salvo (AppData\Common\Cobucciocard\cobucciocard.log)
     Private Shared ReadOnly caminhoLog As String = Path.Combine(

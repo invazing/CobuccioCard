@@ -21,7 +21,7 @@
             Me.Hide()
         Else
             MessageBox.Show("Usuário ou senha inválidos.", "Erro de Login", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            LogHelper.RegistrarErro("Form_Login.login", New Exception("Tentativa de login falhou. Usuário: " & tbx_login_user.Text))
+            ModLogHelper.RegistrarErro("Form_Login.login", New Exception("Tentativa de login falhou. Usuário: " & tbx_login_user.Text))
         End If
     End Sub
 

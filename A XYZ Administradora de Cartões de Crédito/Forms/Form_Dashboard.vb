@@ -3,13 +3,13 @@
     ' Evento acionado ao clicar no menu "CADASTRO"
     ' Abre o formulário de cadastro de transações como diálogo modal
     Private Sub CADASTROToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CADASTROToolStripMenuItem.Click
-        Form_Cad_Transacoes.ShowDialog()
+        Form_CadTransacoes.ShowDialog()
     End Sub
 
     ' Evento acionado ao clicar no menu "RELATÓRIOS"
     ' Abre o formulário de consulta de transações como diálogo modal
     Private Sub RELATÓRIOSToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RELATÓRIOSToolStripMenuItem.Click
-        Form_Con_Transacoes.ShowDialog()
+        Form_PsqTransacoes.ShowDialog()
     End Sub
 
     ' Evento acionado ao clicar no menu "GERENCIAMENTO"
@@ -49,7 +49,7 @@
         ' Se o usuário confirmar, tenta gerar as transações e mostra mensagem de sucesso ou erro
         If confirmacao = DialogResult.Yes Then
             Try
-                GeradorDeTransacoes.GerarTransacoes(1000)
+                modGerarRegistro.GerarTransacoes(1000)
                 MessageBox.Show("Transações geradas com sucesso!", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Catch ex As Exception
                 MessageBox.Show("Erro ao gerar transações: " & ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error)
